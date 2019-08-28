@@ -23,6 +23,7 @@
 									<th>Engine</th>
 									<th>Max Power</th>
 									<th>Fuel</th>
+									<th>FKey</th>
 									@can('update', \App\Author::class)
 										<th>Actions</th>
 									@endcan
@@ -36,7 +37,7 @@
 									<td>{{ $vehiclemodel->engine }}</td>
 									<td>{{ $vehiclemodel->maxpower }}</td>
 									<td>{{ $vehiclemodel->fuel }}</td>
-			
+									<td>{{ $vehiclemodel->author_id }}</td>
 									@can('update', \App\Author::class)
                                     <td>
                                         <a href="{{ route('vehiclemodels.edit', $vehiclemodel->id) }}" class="btn btn-default">Edit</a>

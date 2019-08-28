@@ -21,6 +21,10 @@ class CreateVehicleModelsTable extends Migration
 			$table->integer('maxpower')->default(500);
 			$table->string('fuel')->default('diesel');
 			$table->unsignedInteger('author_id');
+			
+			//cascade
+			$table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');
+			
             $table->timestamps();
         });
     }

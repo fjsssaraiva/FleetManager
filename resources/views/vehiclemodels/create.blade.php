@@ -30,6 +30,10 @@
                             <br />
                             <input type="text" name="fuel" value="{{ old('fuel') }}" />
                             <br /><br />
+							FKey:
+                            <br />
+                            <input type="number" name="author_id" value="{{ old('author_id') }}" />
+                            <br /><br />
                             <input type="submit" value="Submit" class="btn btn-default" />
                         </form>
 						@if ($errors->count() > 0)
