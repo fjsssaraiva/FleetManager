@@ -31,5 +31,15 @@ class VehicleModelsTableSeeder extends Seeder
         	'created_at' => NOW(),
         	'updated_at' => NOW()
         ]);
+		\DB::table('vehicle_models')->insert([
+			'title' => 'B1',
+        	'photo' => '../pic.jpg',
+        	'engine' => 'v6',
+			'maxpower' => 500,
+			'fuel' => 'gasoline',
+			'author_id' => 2,
+        	'created_at' => NOW(),
+        	'updated_at' => NOW()
+        ]);
     }
 }

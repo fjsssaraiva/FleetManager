@@ -17,5 +17,11 @@ class AuthorsTableSeeder extends Seeder
         	'created_at' => NOW(),
         	'updated_at' => NOW()
         ]);
+		\DB::table('authors')->insert([
+			'first_name' => 'BBB',
+        	'last_name' => 'Cars of brand BBB',
+        	'created_at' => NOW(),
+        	'updated_at' => NOW()
+        ]);
     }
 }
